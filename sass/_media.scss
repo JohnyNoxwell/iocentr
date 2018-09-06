@@ -65,7 +65,9 @@
     .education p {
         font-size: 10px;
     }
-
+    .col-sm-6.col-12.slick4.slick-initialized.slick-slider {
+        padding-right: 0;
+    }
     .row.slick,
     .row.slick2,
     .row.slick3,
@@ -117,12 +119,15 @@
     .form-toggls {
         margin-bottom: 57px;
     }
-    #tabs-2 {
+    #tabs-2,#tabs-4,#tabs-6,#tabs-8 {
         display: none;
     }
     #tabs-2, #tabs-1 {
         position: relative;
         left:-14px;
+    }
+    .license .row.align-items-center {
+        margin-right: 0;
     }
     .submit-mobile {
         padding-left: 20px;
