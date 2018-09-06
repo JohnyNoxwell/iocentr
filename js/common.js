@@ -50,10 +50,28 @@ $(function () {
 		$( ".ege" ).on( "click", function() {
 			$("#tabs-1").hide();
 			$("#tabs-2").show();
+
+			$("#tabs-3").hide();
+			$("#tabs-4").show();
+
+			$("#tabs-5").hide();
+			$("#tabs-6").show();
+
+			$("#tabs-7").hide();
+			$("#tabs-8").show();
 		});
 		$( ".oge" ).on( "click", function() {
 			$("#tabs-2").hide();
 			$("#tabs-1").show();
+
+			$("#tabs-4").hide();
+			$("#tabs-3").show();
+
+			$("#tabs-6").hide();
+			$("#tabs-5").show();
+			
+			$("#tabs-8").hide();
+			$("#tabs-7").show();
 			
 			
 		
@@ -63,14 +81,21 @@ $(function () {
 	$( ".ege" ).on( "click", function() {
 		$(".oge input").prop("checked",false); 
 		$("#tabs-1 input").prop("checked",false);
+		$("#tabs-3 input").prop("checked",false);
+		$("#tabs-5 input").prop("checked",false);
+		$("#tabs-7 input").prop("checked",false);
 	});
 	$( ".oge" ).on( "click", function() {
 		
 		$(".ege input").prop("checked",false); 
 		$("#tabs-2 input").prop("checked",false);
+		$("#tabs-4 input").prop("checked",false);
+		$("#tabs-6 input").prop("checked",false);
+		$("#tabs-8 input").prop("checked",false);
 	
 
 	});
+
 	$( "#tabs-1 label" ).on( "click", function() {
 		
 		$(".ege input").prop("checked",false); 
@@ -82,6 +107,53 @@ $(function () {
 		
 		$(".oge input").prop("checked",false); 
 		$("#tabs-1 input").prop("checked",false);
+		$(".ege input").prop("checked",true);
+
+	});
+
+	$( "#tabs-3 label" ).on( "click", function() {
+		
+		$(".ege input").prop("checked",false); 
+		$("#tabs-4 input").prop("checked",false);
+		$(".oge input").prop("checked",true); 
+
+	});
+	$( "#tabs-4 label" ).on( "click", function() {
+		
+		$(".oge input").prop("checked",false); 
+		$("#tabs-3 input").prop("checked",false);
+		$(".ege input").prop("checked",true);
+
+	});
+
+
+	$( "#tabs-5 label" ).on( "click", function() {
+		
+		$(".ege input").prop("checked",false); 
+		$("#tabs-6 input").prop("checked",false);
+		$(".oge input").prop("checked",true); 
+
+	});
+	$( "#tabs-6 label" ).on( "click", function() {
+		
+		$(".oge input").prop("checked",false); 
+		$("#tabs-5 input").prop("checked",false);
+		$(".ege input").prop("checked",true);
+
+	});
+
+
+	$( "#tabs-7 label" ).on( "click", function() {
+		
+		$(".ege input").prop("checked",false); 
+		$("#tabs-8 input").prop("checked",false);
+		$(".oge input").prop("checked",true); 
+
+	});
+	$( "#tabs-8 label" ).on( "click", function() {
+		
+		$(".oge input").prop("checked",false); 
+		$("#tabs-7 input").prop("checked",false);
 		$(".ege input").prop("checked",true);
 
 	});
