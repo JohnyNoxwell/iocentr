@@ -5,7 +5,9 @@
 ::placeholder {
   color: #666;
 }
-
+:focus {
+  outline: none;
+}
 ::selection {
   background-color: $accent;
   color: #fff;
@@ -348,10 +350,16 @@ h3.form-header {
 .no-right-padding {
   padding-right: 0;
 }
+.cards .card {
 
+}
 .row.slick ,.row.slick2,.row.slick3,.row.slick4{
-  max-width: 87%;
-  margin-left: 13%;
+  max-width: calc(100% - 261px);
+  margin-left: 261px;
+  @media screen and (min-width:1800px) {
+    max-width: calc(100% - 385px);
+    margin-left: 385px;
+  }
 }
 
 .slick-prev,
@@ -412,6 +420,9 @@ h3.form-header {
 
   .card {
     height: 300px;
+    @media screen and (min-width:1800px) {
+      height: 370px;
+    }
     position: relative;
     transition: all 750ms ease-out;
     transform-style: preserve-3d;
