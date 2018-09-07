@@ -4,8 +4,8 @@ $(function () {
 	$('form').on('submit', function(e) {
 		e.preventDefault();
 		var url = $(this).attr('action');
-		var name = $(this).find('input.name').val();
-		var phone = $(this).find('input.phone').val();
+		// var name = $(this).find('input.name').val();
+		// var phone = $(this).find('input.phone').val();
 		var subjects = $(this).serialize();
 		var firstName = name;
 
@@ -15,8 +15,6 @@ $(function () {
 			url: url,
 			type: 'POST',
 			data: {
-				name: name,
-				phone: phone,
 				subjects: subjects
 			},
 			cache: false,
@@ -35,7 +33,7 @@ $(function () {
 		});
 	});
 	
-	$('#modal').modal();
+	
 	
 	
 	
@@ -164,7 +162,7 @@ $(function () {
 
 	$(document).ready(function () {
 		$('.slick').slick({
-			slidesToShow: 4.5,
+			slidesToShow: 5,
 			infinite: false,
 			responsive: [
 				{
@@ -194,7 +192,7 @@ $(function () {
 			  ]
 		});
 		$('.slick2').slick({
-			slidesToShow: 3.5,
+			slidesToShow: 4,
 			infinite: false,
 			responsive: [
 				{
@@ -224,7 +222,7 @@ $(function () {
 			  ]
 		});
 		$('.slick3').slick({
-			slidesToShow: 4.5,
+			slidesToShow: 5,
 			infinite: false,
 			responsive: [
 				{
@@ -254,7 +252,7 @@ $(function () {
 			  ]
 		});
 		$('.slick4').slick({
-			slidesToShow: 3.5,
+			slidesToShow: 4,
 			infinite: false,
 			responsive: [
 				{

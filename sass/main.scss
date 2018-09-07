@@ -28,11 +28,11 @@ body {
     outline: none;
 
     &:focus:required:invalid {
-      border-color: red;
+      
     }
 
     &:required:valid {
-      border-color: green;
+      
     }
   }
 }
@@ -354,12 +354,10 @@ h3.form-header {
 
 }
 .row.slick ,.row.slick2,.row.slick3,.row.slick4{
-  max-width: calc(100% - 261px);
-  margin-left: 261px;
-  @media screen and (min-width:1800px) {
-    max-width: calc(100% - 385px);
-    margin-left: 385px;
-  }
+  max-width:80%;
+  margin-left: auto;
+  margin-right: auto;
+ 
 }
 
 .slick-prev,
@@ -864,6 +862,7 @@ button:hover {
   p {
     font-family: $proxima;
     font-size: 18px;
+    margin-bottom: 55px;
   }
 }
 .text-right {
@@ -905,7 +904,7 @@ h4 {
   display: inline-block;
 }
 .features {
-  margin-bottom: 100px;
+  margin-bottom: 35px;
 }
 .reviews {
   margin-bottom: 50px;
