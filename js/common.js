@@ -7,7 +7,7 @@ $(function () {
 		// var name = $(this).find('input.name').val();
 		// var phone = $(this).find('input.phone').val();
 		var subjects = $(this).serialize();
-		var firstName = name;
+		// var firstName = name;
 
 		
 
@@ -21,10 +21,13 @@ $(function () {
 			success: function() {
 				// Success message
 				console.log('Success');
+				$("#modal-success").modal();
 			},
 			error: function() {
 				// Fail message
 				console.log('error');
+				
+
 			},
 			complete: function() {
 				// Clear fields
