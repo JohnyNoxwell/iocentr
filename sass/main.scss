@@ -204,7 +204,7 @@ h2 {
   }
 }
 .header-info {
-  height: 100%;
+  height: calc(100% - 65px);
 }
 header .container {
   height: calc(100vh - 40px);

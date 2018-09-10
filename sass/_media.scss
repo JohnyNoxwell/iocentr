@@ -39,9 +39,11 @@
     .header-topLine {
         // margin-bottom: 62px;
     }
-
+    .header-info {
+        height: calc(100% - 65px);
+    }
     header {
-        padding-bottom: 155px;
+        // padding-bottom: 155px;
 
         p {
             margin-bottom: 30px;
@@ -49,6 +51,7 @@
 
         .arrow {
             background: url(../img/arrow-small.svg) no-repeat center center;
+            bottom: 47px;
         }
     }
 
