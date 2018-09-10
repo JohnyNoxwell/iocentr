@@ -49,8 +49,25 @@ $(function () {
  });
 	
 	
+ var tel = $('#tel');
+ $(document).on('scroll', function () {
+		 if ($('footer').offset().top - $(window).height() < $(window).scrollTop()) {
+				 $('.tel').css('bottom', $(window).scrollTop() + $(window).height() - $('footer').offset().top);
+		 }
+		 else {
+				 $('.tel').css('bottom', '0');
+		 }
+		 var header = $('header').height();
+		 var position = $(window).scrollTop();
+		 var block_position = $('header').offset().top;
+		 if (position > block_position) {
+				 tel.addClass('fixed');
+		 }
+		 else {
+				 tel.removeClass('fixed');
+		 }
 	
-	
+		});
 	
 	
 	$('.phone').mask('0-0000-000-000');

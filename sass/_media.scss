@@ -220,6 +220,25 @@
     .politics {
         top: 50%;
     }
+    .d-hide {
+        display: block;
+    }
+    .tel__number, .tel__text {
+        display: none;
+    }
+    .tel.fixed {
+        width: 50px !important;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        border-radius: 50%;
+        min-width: 50px;
+        height: 50px;
+        justify-content: center;
+        bottom: 10px !important;
+        right: 10px;
+        border: 1px solid #fff;
+    }
 }
 
 /*==========  Mobile First  ==========*/

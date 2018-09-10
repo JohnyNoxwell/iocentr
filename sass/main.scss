@@ -837,7 +837,65 @@ button:hover {
   background-color: #fff;
   border: 2px solid #E31E25;
 }
-
+.tel.fixed {
+  right: 50px;
+  min-width: 255px;
+  background: #006CB5;
+  border-radius: 26px 25px 0px 0px;
+}
+.tel__number {
+  a {
+    text-decoration: none;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      background: url(../img/phone.svg);
+      left: 16px;
+      top: 8px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+.tel__text {
+  font-family: $proxima;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+}
+.d-hide {
+  display: none;
+}
+.tel__tel.white {
+  display: block;
+  color: #fff;
+  border-radius: 25px;
+  border: 2px solid #fff;
+  font-family: $default-font;
+  font-size: 18px;
+  padding: 5px;
+  text-align: center;
+  &:hover {
+    background: rgba(255,255,255,.3);
+  }
+}
+.tel {
+  padding: 15px 18px;
+  position: fixed;
+  bottom: 0px;
+  background: #477DC7;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  max-width: 255px;
+  z-index: 1;
+  margin-left: auto;
+  left: 0;
+  right: -255px;
+  transition: .4s right;
+}
 /* On mouse-over, add a grey background color */
 .containerr:hover input~.checkmark {
   background-color: #fff;
