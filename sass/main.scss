@@ -199,12 +199,77 @@ li {
 h2 {
   font-size: 30px;
 
-  @media screen and (max-width: 540px) {
+  @media screen and (max-width: 576px) {
     font-size: 20px;
   }
 }
 .header-info {
   height: calc(100% - 65px);
+}
+footer.footer {
+  .politics {
+    @media screen and (max-width: 576px) {
+      top:27%;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    min-height: auto;
+  }
+  .row {
+    @media screen and (max-width: 576px) {
+      min-height: 135px;
+    }
+  }
+  .logo-footer {
+    left: 10px;
+    right: auto;
+    @media screen and (max-width: 576px) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+.politics-agreement {
+  margin-top: 40px;
+  margin-bottom: 90px;
+  @media screen and (max-width: 576px) {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  p {
+    font-family: $proxima;
+    font-size: 18px;
+    line-height: 1.2;
+    @media screen and (max-width: 576px) {
+      font-size: 10px;
+    }
+
+  }
+}
+.politics-header {
+  height: auto;
+  min-height: auto;
+  background-size: cover;
+ 
+  background-repeat: no-repeat;
+  background-image: url(../img/politics-bg.png);
+  h1 {
+    @media screen and (max-width: 576px) {
+      font-size: 20px;
+    }
+  }
+  .container {
+    height: auto;
+  }
+  .header-info {
+    height: auto;
+    padding-top: 95px;
+    padding-bottom: 145px;
+    @media screen and (max-width: 576px) {
+      padding-top: 32px;
+      padding-bottom: 75px;
+    }
+}
 }
 header .container {
   height: calc(100vh - 40px);
