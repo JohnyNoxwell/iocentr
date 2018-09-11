@@ -48,8 +48,9 @@ $(function () {
 		return false;
  });
 	
-	
+
  var tel = $('#tel');
+ tel.removeClass('fixed');
  $(document).on('scroll', function () {
 		 if ($('footer').offset().top - $(window).height() < $(window).scrollTop()) {
 				 $('.tel').css('bottom', $(window).scrollTop() + $(window).height() - $('footer').offset().top);

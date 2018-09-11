@@ -102,11 +102,11 @@ header {
     }
 
     40% {
-      -webkit-transform: translateY(-30px);
+      -webkit-transform: translateY(-15px);
     }
 
     60% {
-      -webkit-transform: translateY(-15px);
+      -webkit-transform: translateY(-7px);
     }
   }
 
@@ -121,11 +121,11 @@ header {
     }
 
     40% {
-      transform: translateY(-30px);
+      transform: translateY(-15px);
     }
 
     60% {
-      transform: translateY(-15px);
+      transform: translateY(-7px);
     }
   }
 
@@ -917,11 +917,16 @@ button:hover {
   background-color: #fff;
   border: 2px solid #E31E25;
 }
+.tel {
+  display: none;
+
+}
 .tel.fixed {
   right: 50px;
   min-width: 255px;
   background: #006CB5;
   border-radius: 26px 25px 0px 0px;
+  display: block;
 }
 .tel__number {
   a {
@@ -930,10 +935,10 @@ button:hover {
     &::before {
       content: '';
       position: absolute;
-      width: 15px;
+      width: 16px;
       height: 15px;
       background: url(../img/phone.svg);
-      left: 16px;
+      left: 30px;
       top: 8px;
       background-repeat: no-repeat;
       background-position: center;
@@ -957,6 +962,7 @@ button:hover {
   font-family: $default-font;
   font-size: 18px;
   padding: 5px;
+  padding-left: 25px;
   text-align: center;
   &:hover {
     background: rgba(255,255,255,.3);
@@ -992,7 +998,7 @@ button:hover {
   display: none;
   background: url(../img/check.svg) center center;
   width: 19px;
-  height: 12px;
+  height: 14px;
   top: -1px;
   left: 2px;
 }
