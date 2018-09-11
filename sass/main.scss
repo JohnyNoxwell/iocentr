@@ -290,7 +290,12 @@ h3.form-header {
 .header-topLine {
   // margin-bottom: 180px;
 }
-
+.slick-list {
+  @media screen and (min-width: 1600px){
+    overflow: visible;
+  }
+  
+}
 .phone-number {
   a {
     color: #fff;

@@ -39,6 +39,10 @@
     .header-topLine {
         // margin-bottom: 62px;
     }
+    .slick-list {
+        overflow: hidden;
+        overflow-y: visible !important;
+    }
     .header-info {
         height: calc(100% - 65px);
     }
