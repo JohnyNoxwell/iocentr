@@ -77,12 +77,12 @@ header {
 
   .arrow {
     display: block;
-    background: url(../img/Vector.svg) no-repeat center;
+    background: url(../img/Vector.svg) no-repeat center center;
     width: 170px;
     height: 120px;
     position: absolute;
     bottom: 95px;
-    left: calc(50% - 42px);
+    left: calc(50% - 85px);
 
     &:hover {
       cursor: pointer;
@@ -925,16 +925,19 @@ button:hover {
   background-color: #fff;
   border: 2px solid #E31E25;
 }
-.tel {
-  display: none;
-
-}
 .tel.fixed {
+  right: 50px;
+}
+.fixed {
+  display: block;
+}
+.tel{
   right: 50px;
   min-width: 255px;
   background: #006CB5;
   border-radius: 26px 25px 0px 0px;
-  display: block;
+  position: fixed;
+  transition: 1.3s right;
 }
 .tel__number {
   a {
@@ -980,9 +983,7 @@ button:hover {
   padding: 15px 18px;
   position: fixed;
   bottom: 0px;
-  background: #477DC7;
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
+  
   max-width: 255px;
   z-index: 1;
   margin-left: auto;
