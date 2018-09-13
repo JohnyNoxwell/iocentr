@@ -136,7 +136,10 @@
         position: relative;
         // left:0px;
     }
-
+    .button > div {
+        display: flex;
+        justify-content: center;
+    }
     .license .row.align-items-center {
         margin-right: 0;
     }
