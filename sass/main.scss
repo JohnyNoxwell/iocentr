@@ -566,11 +566,19 @@ h3.form-header {
       transform: translateY(-50%);
       z-index: 1;
       width: 100%;
+      @media screen and (max-width:576px) {
+        padding: 2rem 0;
+      }
     }
 
     h3 {
       color: inherit;
       margin: 0 0;
+      font-size: 21px;
+      text-transform: uppercase;
+      @media screen and (max-width:576px) {
+        font-size: 14px;
+      }
     }
   }
 
@@ -679,7 +687,7 @@ h3.form-header {
   label {
     font-family: $default-font;
     color: #000;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 700;
     padding: 9px 18px 6px 10px;
     position: absolute;
@@ -959,6 +967,7 @@ button:hover {
   a {
     text-decoration: none;
     position: relative;
+    display: block;
     &::before {
       content: '';
       position: absolute;
@@ -966,7 +975,8 @@ button:hover {
       height: 15px;
       background: url(../img/phone.svg);
       left: 30px;
-      top: 8px;
+      top: 50%;
+    transform: translateY(-50%);
       background-repeat: no-repeat;
       background-position: center;
     }

@@ -50,28 +50,35 @@ $(function () {
 	
 
  var tel = $('#tel');
+ var questions = $('.questions').height();
  tel.removeClass('fixed');
  $(document).on('scroll', function () {
-		 if ($('footer').offset().top - $(window).height() < $(window).scrollTop()) {
-				 $('.tel').css('bottom', $(window).scrollTop() + $(window).height() - $('footer').offset().top);
-		 } else if ($('.questions').offset().top  > $(window).scrollTop()){
-			tel.removeClass('fixed');
+		 if ($('footer').offset().top - $(window).height() - questions  < $(window).scrollTop()) {
+				//  $('.tel').css('bottom', $(window).scrollTop() + $(window).height() - $('footer').offset().top);
+				tel.fadeOut();
+		 
 		 }
 		 else {
 				 $('.tel').css('bottom', '0');
+				 tel.fadeIn();
 		 }
-		 var header = $('header').height();
+		
 		 var position = $(window).scrollTop();
 		 var block_position = $('header').offset().top;
-		 if (position > block_position) {
+		 var max = $('.questions').offset().top;
+		 if (position  > block_position) {
 				 tel.addClass('fixed');
-		 }
-		 else {
-				 tel.removeClass('fixed');
-		 }
+		 } else {
+					tel.removeClass('fixed');
+			}
+
+
 	
+		
+		 console.log(questions);
+		 
 		});
-	
+		// || !(position  > block_position)
 	
 	$('.phone').mask('0-0000-000-000');
 	
