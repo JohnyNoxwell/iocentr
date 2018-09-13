@@ -55,7 +55,7 @@
 
         .arrow {
             background: url(../img/arrow-small.svg) no-repeat center center;
-            bottom: 47px;
+            bottom: 0;
         }
     }
 
@@ -129,11 +129,14 @@
     }
     #tabs-2,#tabs-4,#tabs-6,#tabs-8 {
         display: none;
+        position: relative;
+        left: -30px;
     }
     #tabs-2, #tabs-1 {
         position: relative;
-        left:-14px;
+        // left:0px;
     }
+
     .license .row.align-items-center {
         margin-right: 0;
     }
@@ -164,11 +167,20 @@
     .teachers p {
         font-size: 14px;
     }
-
+    .checkmark {
+left:10px;
+    }
+    .containerr {
+        padding-left: 45px !important;
+    }
     .blue-text {
         font-size: 14px;
     }
-
+    .univetsity {
+        img {
+            width: 70%;
+        }
+    }
     .teacher-name {
         font-size: 14px;
     }

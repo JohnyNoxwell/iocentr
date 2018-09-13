@@ -54,6 +54,8 @@ $(function () {
  $(document).on('scroll', function () {
 		 if ($('footer').offset().top - $(window).height() < $(window).scrollTop()) {
 				 $('.tel').css('bottom', $(window).scrollTop() + $(window).height() - $('footer').offset().top);
+		 } else if ($('.questions').offset().top  > $(window).scrollTop()){
+			tel.removeClass('fixed');
 		 }
 		 else {
 				 $('.tel').css('bottom', '0');
